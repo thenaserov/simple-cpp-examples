@@ -15,5 +15,25 @@ int main() {
 
         s = matcher.suffix().str();
     }
+
+
+    // Regex breakdown
+    // (\+\d{1,3})?[\.\-\)\(]*([0-9]{3})[\.\-\)\(\ ]*([0-9]{3})[\.\-\)\(\ ]*([0-9]{4})
+    // 
+    // (\+\d{1,3})?
+    // this means -> match a literal plus sign followed by 1 to 3 digits, zero or one time
+    // 
+    // [\.\-\)\(]*
+    // match (zero or more) a dot, a dash, an open parathesis or closed paranthesis
+    // 
+    // ([0-9]{3})[\.\-\)\(\ ]*
+    // match exactly three digits followed by (zero or more) . - ()
+    // 
+    // ([0-9]{3})[\.\-\)\(\ ]*
+    // just like the example above
+    //
+    // ([0-9]{4})
+    // match exactly four digits
+
     return 0;
 }
