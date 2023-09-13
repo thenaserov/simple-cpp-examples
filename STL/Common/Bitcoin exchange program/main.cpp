@@ -5,7 +5,7 @@
 #include <array>
 #include <cstdio>
 
-#include <curl/curl.h>
+#include "curl/curl.h"
 #include "json.hpp"
 
 int main() {
