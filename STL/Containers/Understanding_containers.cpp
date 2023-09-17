@@ -26,7 +26,19 @@ int main() {
     // All containers have iterators that can be found in <algorithms> and <functional> header
 
     // Accessor methods for these containers
-    //----------------------------------------------------------------
-
+    // ----------------------------------------------------------------------------------------------
+    // |  Contaaianer    |   operator[]  |   at  |    front    |    back    |    data    |   top    | 
+    // |     array       |       x       |   x   |      x      |      x     |      x     |          |
+    // |     deque       |       x       |   x   |      x      |      x     |            |          |
+    // |  forward_list   |               |       |      x      |            |            |          |
+    // |     list        |               |       |      x      |      x     |            |          |
+    // |      map        |       x       |   x   |             |            |            |          | 
+    // |     queue       |               |       |      x      |      x     |            |          |
+    // |      set        |               |       |             |            |            |          |
+    // |     stack       |               |       |             |            |            |     x    |
+    // |  unordered_map  |       x       |   x   |             |            |            |          |
+    // |  unordered_set  |               |       |             |            |            |          |
+    // |     vector      |       x       |   x   |      x      |      x     |            |          |
+    //  ---------------------------------------------------------------------------------------------
     return 0;
 }
