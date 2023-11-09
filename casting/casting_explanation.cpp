@@ -4,7 +4,7 @@ int main()
 {
     // implicit : automatic casting
     // explicit : you need to prepare the casting
-
+    // 
     // implicit casting example
     int a = 2;
     double b = 3.14;
@@ -19,10 +19,10 @@ int main()
 
     // static_cast
     // static_cast < new_type >( the_variable )
-    float aaa = static_cast<float>(aa);
     // this casting tells the compiler to two different data types (built-in)
     // we may have loss of precision
     // pointer conversion RELATED pointer types
+    float aaa = static_cast<float>(aa);
 
     // const_cast 
     // const_cast < new_type > ( the_vasriable )
@@ -47,10 +47,6 @@ int main()
     int* p = new int(65); // A
     // we convert 65 to a character (the memory address will be swapped)
     char* ch = reinterpret_cast<char*>(p);
-
     std::cout << *ch << std::endl;
-
-
-
     return 0;
 }
