@@ -1,5 +1,6 @@
 #include <iostream>
 #include <map>
+#include <string>
 
 int main() {
 	// A map is an associative container that stores pairwise elements
@@ -30,6 +31,12 @@ int main() {
 	// find : will return the first element found by key.
 	
 	
+	std::map<std::string, std::string> stringMap;
+	stringMap.insert({"Hello", "World!"});
+	std::cout << stringMap["Hello"] << std::endl;
+
+	
+
 
 	return 0;
 }
