@@ -11,14 +11,14 @@ int main() {
 	std::fstream file;
 
 	// WRITE OPERTATION
-	file.open("file.txt", std::ios::out);
+	file.open("file.txt", std::ios::out); // std::ios::out means you want to write to a file
 	if (file.is_open()) {
 		file << "my keyboard is great\n";
 		file.close();
 	}
 
 	// READ OPERATION
-	file.open("file.txt", std::ios::in);
+	file.open("file.txt", std::ios::in); // std::ios::out means you want to read from a file
     	if (file.is_open()) {
         std::string text;
         while (std::getline(file, text)) {
