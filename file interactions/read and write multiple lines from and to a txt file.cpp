@@ -19,22 +19,22 @@ int main()
 	file.open("file.txt", std::ios::out);
 	if (file.is_open())
 	{
-		for (std::string element: data_container)
-		{
-			file << element << "\n";
-		}
-		file << "my keyboard is great\n";
-		file.close();
+	    for (std::string element: data_container)
+	    {
+		file << element << "\n";
+	    }
+            file << "my keyboard is great\n";
+	    file.close();
 	}
 
 	// READ OPERATION
 	file.open("file.txt", std::ios::in);
 	std::vector<std::string> in_data_container;
-    if (file.is_open()) {
+  	if (file.is_open()) {
         std::string text;
         while (std::getline(file, text)) {
             std::cout << text << "\n";
-			in_data_container.push_back(text);
+	    in_data_container.push_back(text);
         }
         file.close();
     }
