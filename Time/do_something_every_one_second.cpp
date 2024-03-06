@@ -20,3 +20,4 @@ int main() {
 	return 0;
 }
 
+// This is the worst way to do so!
