@@ -34,7 +34,7 @@ int main()
     // auto
     mMap.insert({"fourth", SimpleObject(1, 1, "number")});
 
-    
+    // use structured bindings to get a pair if a pair with the key "third" has been already inserted
     
     return 0;
 }
