@@ -57,6 +57,12 @@ int main()
 
     // To find a key
     auto ptr = mMap.find("second");
+
+    if(ptr == mMap.end()){
+        std::cout << "Unable to find" << std::endl;
+    } else {
+        std::cout << "found the key " << ptr.first() << std::endl;
+    }
     
     return 0;
 }
