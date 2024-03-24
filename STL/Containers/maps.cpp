@@ -36,6 +36,9 @@ int main()
 
     // use structured bindings to get a pair if a pair with the key "third" has been already inserted
     // I don't understand this peace of code my self!
+    // UPDATE : When the insert is called a pair will be returned!
+    // the first of our retuened pair is an iterator and the second is
+    // boolean saying if our item was inserted!
     const auto [iterator, inserted] = mMap.insert({"third", SimpleObject});
 
     if (inserted) {
