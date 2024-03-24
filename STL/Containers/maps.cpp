@@ -52,7 +52,11 @@ int main()
         std::cout << x.first() << " " << x.second() << std::endl;
     }
 
+    // To remove an element
+    mMap.erase("second");
 
+    // To find a key
+    auto ptr = mMap.find("second");
     
     return 0;
 }
