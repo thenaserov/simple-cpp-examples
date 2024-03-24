@@ -37,6 +37,12 @@ int main()
     // use structured bindings to get a pair if a pair with the key "third" has been already inserted
     // I don't understand this peace of code my self!
     const auto [iterator, inserted] = mMap.insert({"third", SimpleObject});
+
+    if (inserted) {
+        std::cout << "item inserted" << std::endl;
+    } else {
+        std::cout << "key exists, item not inserted!" << std::endl;
+    }
     
     return 0;
 }
