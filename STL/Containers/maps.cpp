@@ -46,6 +46,13 @@ int main()
     } else {
         std::cout << "key exists, item not inserted!" << std::endl;
     } // In this case it won't allow us to insert the key cause the key already exists
+
+    // How to go through all the data in our map
+    for(auto &x: mMap){
+        std::cout << x.first() << " " << x.second() << std::endl;
+    }
+
+
     
     return 0;
 }
