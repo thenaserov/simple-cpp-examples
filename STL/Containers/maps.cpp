@@ -45,7 +45,7 @@ int main()
         std::cout << "item inserted" << std::endl;
     } else {
         std::cout << "key exists, item not inserted!" << std::endl;
-    }
+    } // In this case it won't allow us to insert the key cause the key already exists
     
     return 0;
 }
