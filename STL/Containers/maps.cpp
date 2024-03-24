@@ -65,7 +65,7 @@ int main()
     }
 
     // To clear all elements
-    mMap.erase();
+    mMap.clear();
     
     
     return 0;
