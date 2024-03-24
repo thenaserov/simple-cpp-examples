@@ -63,6 +63,10 @@ int main()
     } else {
         std::cout << "found the key " << ptr.first() << std::endl;
     }
+
+    // To clear all elements
+    mMap.erase();
+    
     
     return 0;
 }
