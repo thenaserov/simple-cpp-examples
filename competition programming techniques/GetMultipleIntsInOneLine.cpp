@@ -10,8 +10,7 @@ int main() {
     std::istringstream is(input);
     int num;
     while (is >> num) arr.push_back(num);
-    for (auto d : arr) {
-        std::cout << d << std::endl;
-    }
+        for (auto d : arr)
+            std::cout << d << std::endl;
     return 0;
 }
