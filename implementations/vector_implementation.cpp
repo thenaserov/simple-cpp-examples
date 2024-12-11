@@ -41,7 +41,12 @@ public:
 			_vec = temp;
 		}
 		_vec[_current_index] = input;
-		_current_index;
+		_current_index++;
+	}
+
+	void pop() {
+		_vec[_current_index] = 0;
+		_current_index--;
 	}
 
 	int size() const {
@@ -58,6 +63,7 @@ public:
 
 int main() {
 	m_vector<int> myVec = m_vector<int>(2);
+	myVec.pop();
 	std::cout << myVec.size() << std::endl;
 	return 0;
 }
