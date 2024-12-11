@@ -45,7 +45,6 @@ public:
 	}
 
 	void pop() {
-		_vec[_current_index] = 0;
 		_current_index--;
 	}
 
