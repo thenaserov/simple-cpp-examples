@@ -17,13 +17,13 @@ class m_vector {
 public:
 
 	m_vector(int size) {
-		_vec = new T(size);
+		_vec = new T[size];
 		_vec_size = size;
 		_current_index = --size;
 	}
 
 	m_vector() {
-		_vec = new T(1);
+		_vec = new T[1];
 		_vec_size = 1;
 		_current_index = 0;
 	}
