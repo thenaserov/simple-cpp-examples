@@ -44,8 +44,11 @@ public:
 		_current_index++;
 	}
 
-	void pop() {
-		_current_index--;
+	if (_current_index > 0) {
+		_current_index--; 
+	}
+	else {
+		throw std::out_of_range("No elements to pop");
 	}
 
 	int size() const {
