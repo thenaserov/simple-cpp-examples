@@ -19,7 +19,7 @@ public:
 	m_vector(int size) {
 		_vec = new T[size];
 		_vec_size = size;
-		_current_index = --size;
+		_current_index = 0;
 	}
 
 	~m_vector() { delete[] _vec; }
