@@ -12,7 +12,7 @@ class m_vector {
 
 	T* _vec;
 	size_t _vec_size{ 1 };
-	int _current_index{ 0 };
+	size_t _current_index{ 0 };
 
 public:
 
