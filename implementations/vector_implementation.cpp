@@ -22,12 +22,6 @@ public:
 		_current_index = --size;
 	}
 
-	m_vector() {
-		_vec = new T[1];
-		_vec_size = 1;
-		_current_index = 0;
-	}
-
 	~m_vector() { delete[] _vec; }
 
 	void m_push_back(T input) {
